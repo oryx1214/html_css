@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.open-button {
+  background-color: #4CAF50; /* Changed color for a fresher look */
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9; /* Slightly increased opacity */
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 20px; /* Increased padding */
+  background-color: white;
+  border-radius: 15px; /* Rounded corners */
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04aa6d; /* Default button color */
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.9; /* Slightly increased opacity */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.form-container .cancel {
+  background-color: #f44336; /* Changed color for cancel button */
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
